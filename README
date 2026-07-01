@@ -1,29 +1,105 @@
-# AWS Data Pipeline Project — Amazon Products Analysis
+#  AWS Data Pipeline Project – Amazon Product Analysis
 
-## Project Overview
-End-to-end data pipeline built on AWS for analyzing Amazon product data.
+## 📌 Project Overview
+Designed and implemented an end-to-end data engineering pipeline on AWS to process, transform, query, and visualize Amazon product data. The project demonstrates ETL workflows, cloud data storage, data cataloging, SQL-based analytics, and interactive business dashboards.
+
+---
 
 ## Architecture
-S3 → Glue Crawler → Glue ETL → Athena → QuickSight
 
-## Tech Stack
-- Amazon S3 (data storage)
-- AWS Glue (ETL & cataloging)
-- Amazon Athena (SQL queries)
-- Amazon QuickSight (visualization)
-- Dataset: Amazon Products (Kaggle)
+Raw CSV Dataset
+⬇
+Amazon S3
+⬇
+AWS Glue Crawler
+⬇
+AWS Glue Data Catalog
+⬇
+AWS Glue ETL Job
+⬇
+Processed Data (Parquet in Amazon S3)
+⬇
+Amazon Athena
+⬇
+Amazon QuickSight Dashboard
 
-## Steps
-1. Uploaded raw CSV to S3
-2. Created Glue Crawler to catalog data
-3. Ran Glue ETL job for transformation
-4. Queried data using Athena
-5. Built interactive dashboard in QuickSight
+---
 
-## Dashboard Screenshots
-[screenshots yahan]
+##  AWS Services Used
 
-## Key Insights
-- Total products analyzed: X
-- Average discounted price: ₹3,155
-- Highest discount category: X
+- **Amazon S3** – Data Storage
+- **AWS Glue Crawler** – Metadata Discovery
+- **AWS Glue Data Catalog** – Table Management
+- **AWS Glue ETL** – Data Transformation
+- **Amazon Athena** – SQL Analytics
+- **Amazon QuickSight** – Dashboard & Visualization
+
+---
+
+## 🛠️ Tech Stack
+
+- AWS
+- SQL
+- Amazon S3
+- AWS Glue
+- Amazon Athena
+- Amazon QuickSight
+- Parquet
+- ETL Pipeline
+- Data Engineering
+
+---
+
+## 📂 Dataset
+
+- Amazon Products Dataset (Kaggle)
+
+---
+
+## ETL Workflow
+
+1. Uploaded raw CSV dataset to Amazon S3
+2. Created AWS Glue Crawler to catalog the dataset
+3. Generated metadata in AWS Glue Data Catalog
+4. Built and executed AWS Glue ETL Job
+5. Stored transformed data in Parquet format on Amazon S3
+6. Queried processed data using Amazon Athena
+7. Built interactive dashboards using Amazon QuickSight
+
+---
+
+## 📊 Dashboard
+
+> Dashboard Screenshot
+
+(Add your QuickSight dashboard image here)
+
+---
+
+## Sample Athena Query
+
+```sql
+SELECT *
+FROM processed_products
+LIMIT 10;
+```
+
+---
+
+## 📈 Key Insights
+
+- Built a complete serverless AWS Data Pipeline
+- Converted raw CSV data into optimized Parquet format
+- Queried processed data using Amazon Athena
+- Designed interactive dashboards in Amazon QuickSight
+- Demonstrated end-to-end ETL workflow using AWS services
+
+---
+
+## Project Screenshots
+
+- AWS Glue Job
+- Athena Query Results
+- QuickSight Dashboard
+
+---
