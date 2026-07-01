@@ -1,0 +1,29 @@
+# AWS Data Pipeline Project — Amazon Products Analysis
+
+## Project Overview
+End-to-end data pipeline built on AWS for analyzing Amazon product data.
+
+## Architecture
+S3 → Glue Crawler → Glue ETL → Athena → QuickSight
+
+## Tech Stack
+- Amazon S3 (data storage)
+- AWS Glue (ETL & cataloging)
+- Amazon Athena (SQL queries)
+- Amazon QuickSight (visualization)
+- Dataset: Amazon Products (Kaggle)
+
+## Steps
+1. Uploaded raw CSV to S3
+2. Created Glue Crawler to catalog data
+3. Ran Glue ETL job for transformation
+4. Queried data using Athena
+5. Built interactive dashboard in QuickSight
+
+## Dashboard Screenshots
+[screenshots yahan]
+
+## Key Insights
+- Total products analyzed: X
+- Average discounted price: ₹3,155
+- Highest discount category: X
